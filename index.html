@@ -1,40 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<meta charset="utf-8">
-	<title>Page1</title>
-	<link rel="stylesheet"  type="text/css" href="web.css">
-    <link rel="stylesheet" href="animate.css">
-   
-    <script type="text/javascript" src="web.js"></script>
-
+    <title>First page</title>
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/log.png" type="image/x-icon">
 </head>
 <body>
-	<header>
-			<button onclick="changeBackground()">Background change</button> 
+    <header class="header">
+    <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img src="img/log.png" alt="" onclick="index.html">
+                </div>
+                <nav class="nav">
+                        <input type="text" class="field" placeholder="Can I help you?">
+                    <a href="#" class="nav__link">About</a>
+                    <a href="myProjects/indexx.html" class="nav__link">My Projects</a>
 
-	</header>
-		
-<div class="box animated slideInDown">
-	<img src="photo/pic1.jpg" alt="avatar" class="box-img animated pulse">
-	<h1>Artak Konjoryan</h1>
-	<h5>Web Developer</h5>
-<p >Skills  <img src="photo/html.png" id="img" class="animated zoomIn"> <img src="photo/css.png" id="img" class="animated zoomIn" > <img src="photo/js.png" id="img" class="animated zoomIn"></p>
+                    <a href="#" class="nav__link">Feedback</a>
+
+
+                </nav>
+            </div>
+    </div>
+</header>
+
+<div class="intro">
+   <img src="img/img1.png" alt="" width="1170px" style="border-radius: 4%">
 
 </div>
-<div class="footer">
-<ul>
-	Contact:
-	<li><a href="https://www.instagram.com/konjoryan/"><img src="photo/i.png" class="animated zoomIn"></a></li>
-	<li><a href="https://t.me/konjoryan"><img src="photo/t.png" class="animated zoomIn"></a></li>
-	<li><a href="https://www.facebook.com/artak.konjoryan"><img src="photo/fb.png" class="animated zoomIn"></a></li>
-	<li><a href="https://vk.com/artakkonjoryan1"><img src="photo/vk.png" class="animated zoomIn"></a></li>
-	
-</ul>
-<p id="copyright"> &copy 2019  Artak Konjoryan</p>
-
+<hr width="1170px" style="border-bottom: 3px solid #e2970b">
+<div class="myProj">
+    <div class="firstP">
+       <a href="myProjects/indexx.html"> <img src="img/todo.jpg" alt="todo"></a>
+        
+    </div>
+    <div class="secondP">
+            <a href="myProjects/indexx.html"> <img src="img/slide.jpg" alt="slide" width="500px"></a>
+       
+    </div>
+    <div class="thirdP">
+        <img src="img/soon.png" alt="Coming soon" width="500px">
+       
+    </div>
+    <div class="fourthP"><img src="img/soon.png" alt="Coming soon" width="500px"></div>
 </div>
-
+<hr width="1170px" style="border-bottom: 3px solid #e2970b">
+    <footer class="footer">All rights reserved © 2019</footer>
+   <script src="a.js"></script>
 </body>
 </html>
