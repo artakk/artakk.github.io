@@ -1,0 +1,19 @@
+
+*{
+    box-sizing: border-box;
+    font-family: Arial;
+    overflow: hidden;
+    background: antiquewhite;
+ }
+
+ #snake-container {
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+ }
+
+canvas {
+    display: block;
+    margin: 0 auto;
+}
+
