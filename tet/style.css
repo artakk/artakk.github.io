@@ -1,0 +1,50 @@
+*{
+   box-sizing: border-box;
+   font-family: Arial;
+   overflow: hidden;
+   background: aliceblue;
+}
+
+.tetris-container{
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 600px; 
+    /* border: 1px solid rgba(28, 24, 221, .2) */
+}
+.game {
+    width: 300px;
+    height: 600px;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(56, 47, 47, 0.5);
+}
+
+.elem{
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(28, 24, 221, .4)
+}
+
+.figure, .set {
+    background-color: red;
+}
+.controls{
+color: gray;
+padding: 20px;
+position: absolute;
+top: 200px;
+right: 300px;
+}
+
+input {
+    display: block;
+    margin: 30px auto;
+    font-size: 20px;
+    padding: 10px;
+
+}
