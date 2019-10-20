@@ -1,12 +1,12 @@
-let game = document.createElement('div');
+const game = document.createElement('div')
 game.classList.add('game')
 
 for (let i = 0; i < 200; i++) {
-    let elem = document.createElement('div');
-    elem.classList.add('elem');
-    game.appendChild(elem);
+  const elem = document.createElement('div')
+  elem.classList.add('elem')
+  game.appendChild(elem)
 }
-let main = document.getElementsByClassName('tetris-container')[0];
+const main = document.querySelector('.tetris-container');
 main.appendChild(game);
 let elem = document.getElementsByClassName('elem');
 let i = 0;
@@ -119,7 +119,7 @@ function move() {
                                 newSet.push(document.querySelector(`[posX = "${setCoordinates[0]}"[posY = "${setCoordinates[1] - 1} "]`))
                             }
                         }
-                        for (let a = 0; a< newSet.length; a++) {
+                        for (let a = 0; a < newSet.length; a++) {
                             newSet[a].classList.add('set');
                         }
                         i--;
@@ -142,8 +142,8 @@ let interval = setInterval( () => {
 }, 300);
 
 window.addEventListener('keydown', function (e) {
-    let coordinates1 = [figureBody[0].getAttribute('posX'), figureBody[0].getAttribute('posY')];
-     coordinates2 = [figureBody[1].getAttribute('posX'), figureBody[1].getAttribute('posY')];
+  let coordinates1 = [figureBody[0].getAttribute('posX'), figureBody[0].getAttribute('posY')];
+      coordinates2 = [figureBody[1].getAttribute('posX'), figureBody[1].getAttribute('posY')];
      coordinates3 = [figureBody[2].getAttribute('posX'), figureBody[2].getAttribute('posY')];
      coordinates4 = [figureBody[3].getAttribute('posX'), figureBody[3].getAttribute('posY')]
 
@@ -172,7 +172,6 @@ window.addEventListener('keydown', function (e) {
             }
         }
     }
-
 
     if(e.keyCode == 37) {
         getNewState(-1);
