@@ -173,13 +173,13 @@ window.addEventListener('keydown', function (e) {
         }
     }
 
-    if(e.keyCode == 37) {
+    if(e.keyCode == 65) {
         getNewState(-1);
-    } else if(e.keyCode == 39) {
+    } else if(e.keyCode == 68) {
         getNewState(1)
-    } else if(e.keyCode == 40) {
+    } else if(e.keyCode == 83) {
         move();
-    } else if(e.keyCode == 38) {
+    } else if(e.keyCode == 87) {
         flag = true;
 
         let figureNew = [
